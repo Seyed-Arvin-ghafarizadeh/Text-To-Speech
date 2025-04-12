@@ -29,3 +29,42 @@ Place your fine-tuned model checkpoint in the checkpoints directory.
 Modify the input text in inference.py.
 
 Run the script to generate the output .wav file.
+
+
+
+**Libraries and Dependencie**
+*1.PyTorch*
+
+torch: The core library for deep learning.
+
+torch.utils.data: For creating custom datasets and data loaders.
+
+torch.nn.functional: For various deep learning operations, such as loss functions.
+
+torch.optim: For optimization algorithms, like Adam.
+
+*2.Torchaudio*
+
+torchaudio: A library for audio processing, used here to load, save, and transform audio files (e.g., mel spectrogram transformations).
+
+*3.NumPy*
+
+numpy: For numerical operations (e.g., array manipulation).
+
+*4.Matplotlib*
+
+matplotlib.pyplot: For plotting the learning curve (used in step 2).
+
+*5.OS and File Handling*
+
+os: For path manipulation and file handling.
+
+*6.Regular Expressions*
+
+re: Used to parse the CMU Arctic dataset transcriptions in step 1.
+
+*7.Custom Modules*
+
+CMUArcticDataset: Custom dataset class for loading and processing CMU Arctic data (defined in step 1).
+
+Preprocessor, LanguageTokenizer, SequenceTokenizer: For text preprocessing (used in step 2).
